@@ -62,3 +62,16 @@ WHEN the order is picked by backend service with "Accepted" status
 THEN a dispatch confirmation email to the customer should be sent
 AND the order status should be changed to "Completed"
 ```
+
+## **Assumptions**
+
+1. The cart is limited to one item
+2. We will only store following attributes for products,
+   - Product ID
+   - Title
+   - InStockQuantity
+3. Order statuses are limited to,
+   - Created
+   - Accepted
+   - Discarded
+   - Completed
